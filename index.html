@@ -3,55 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>My Modern Website</title>
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
             color: #333;
+            line-height: 1.6;
         }
+
+        /* Header */
         header {
-            background: #333;
+            background: #6200ea; /* Modern purple color */
             color: #fff;
-            padding: 10px 20px;
+            padding: 20px 0;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        /* Navigation */
         nav ul {
             list-style: none;
             padding: 0;
             margin: 0;
             display: flex;
             justify-content: center;
-            background: #444;
+            background: #3700b3; /* Darker purple for contrast */
+            padding: 10px 0;
         }
+
         nav ul li {
             margin: 0 15px;
         }
+
         nav ul li a {
             text-decoration: none;
             color: #fff;
             font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
         }
+
+        nav ul li a:hover {
+            color: #bb86fc; /* Light purple for hover effect */
+        }
+
+        /* Main Content */
         main {
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
         }
+
+        main h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #6200ea; /* Matching header color */
+        }
+
+        main p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Footer */
         footer {
             background: #333;
             color: #fff;
             text-align: center;
-            padding: 10px 20px;
+            padding: 15px 0;
             position: fixed;
             bottom: 0;
             width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            main {
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My e theory Website</h1>
+        <h1>Welcome to My Modern Website</h1>
     </header>
     <nav>
         <ul>
@@ -66,7 +133,7 @@
         <p>This is where your main content will go. You can customize this later with your text and images.</p>
     </main>
     <footer>
-        <p>&copy; 2025 My Website. All rights reserved.</p>
+        <p>&copy; 2025 My Modern Website. All rights reserved.</p>
     </footer>
 </body>
 </html>
